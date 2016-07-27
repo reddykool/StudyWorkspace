@@ -4,11 +4,9 @@ public class MainForAll {
 	
 	  public static void main(String args[]) {
 		  System.out.println("****   START of program  *****");
-		  
-			PGuiComboBox eventObj = new PGuiComboBox();
-			eventObj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			eventObj.setSize(400, 200);
-			eventObj.setVisible(true);
+		 
+		  PBestOfString obj = new PBestOfString();
+		  obj.run();
 		  
 		  System.out.println("****   END of program  *****");
 		}
