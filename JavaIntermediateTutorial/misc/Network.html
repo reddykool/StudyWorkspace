@@ -1,16 +1,17 @@
-import java.awt.Graphics;
-
-import javax.swing.JApplet;
-
-
-//1. Applet code saved as xyz.html 
-/*
 <html>
     <head>
-        <title>Hello World!</title>
+        <title>Network Applet</title>
     </head>
-    <body> Hello World Applet
-        <applet code = "PAppletHelloWorld.class" width="300" height="300">
+    <body> Opening web links
+        <applet 
+            code="PNetworkingBasic.class" 
+
+            width="300" 
+            height="300">
+            <param name="title0" value="thenewboston Blog">
+            <param name="address0" value="http://thenewboston.org">
+            <param name="title1" value="My Blog">
+            <param name="address1" value="http://reddykool.blogspot.com">
 
             Your Browser has not enabled Java !?!
                  OR
@@ -31,16 +32,6 @@ import javax.swing.JApplet;
         </applet>
     </body>
 </html>
-*/
-
-//2. copy .class files to same location where you have .html
 
 
-public class PAppletHelloWorld extends JApplet{
-	
-	public void paint(Graphics g) {
-		g.drawString("Hello There!!!", 25, 45);
-		//g.drawArc(40, 50, 10, 10, 0, 90);
-	}
 
-}

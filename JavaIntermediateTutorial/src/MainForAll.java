@@ -14,6 +14,18 @@ public class MainForAll {
 		t3.start();
 		t4.start();
 		
+		System.out.println("*** Start of all threads initiated... Run started?");
+		
+		try {
+			t1.join();
+			t2.join();
+			t3.join();
+			t4.join();			
+			System.out.println("*** All threads are done...");
+		} catch (InterruptedException e)
+		{
+			System.out.println("Thread exception"+e);
+		}
 		System.out.println("****   END of program  *****");		
 	}
 

@@ -1,16 +1,9 @@
-import java.awt.Graphics;
-
-import javax.swing.JApplet;
-
-
-//1. Applet code saved as xyz.html 
-/*
 <html>
     <head>
-        <title>Hello World!</title>
+        <title>Basic Applet</title>
     </head>
-    <body> Hello World Applet
-        <applet code = "PAppletHelloWorld.class" width="300" height="300">
+    <body> Sum of 2 numbers
+        <applet code="PAppletBasic.class" width="300" height="300">
 
             Your Browser has not enabled Java !?!
                  OR
@@ -31,16 +24,3 @@ import javax.swing.JApplet;
         </applet>
     </body>
 </html>
-*/
-
-//2. copy .class files to same location where you have .html
-
-
-public class PAppletHelloWorld extends JApplet{
-	
-	public void paint(Graphics g) {
-		g.drawString("Hello There!!!", 25, 45);
-		//g.drawArc(40, 50, 10, 10, 0, 90);
-	}
-
-}

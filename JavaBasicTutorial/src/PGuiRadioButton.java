@@ -51,7 +51,7 @@ public class PGuiRadioButton extends JFrame {
 		
 		textField.setFont(pf);
 		
-		seperateHandlerObjects = true;
+		seperateHandlerObjects = false;
 		
 		if(seperateHandlerObjects) {
 			pb.addItemListener(new HandlerClass(pf));
