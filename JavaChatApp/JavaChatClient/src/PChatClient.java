@@ -29,6 +29,7 @@ public class PChatClient extends JFrame {
 			);
 		add(userText, BorderLayout.NORTH);
 		chatWindow = new JTextArea();
+		chatWindow.setEditable(false);
 		add(new JScrollPane(chatWindow), BorderLayout.CENTER);
 		setSize(350,500);
 		setVisible(true);

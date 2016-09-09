@@ -28,6 +28,7 @@ public class PChatServer extends JFrame {
 			);
 		add(userText, BorderLayout.NORTH);
 		chatWindow = new JTextArea();
+		chatWindow.setEditable(false);
 		add(new JScrollPane(chatWindow));
 		setSize(400,600);
 		setVisible(true);
